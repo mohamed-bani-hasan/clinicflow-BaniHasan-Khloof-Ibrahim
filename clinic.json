@@ -1,0 +1,45 @@
+{
+  "clinic": {
+    "name": "AAUP Health Center",
+    "departments": [
+      {
+        "dept_id": "D01",
+        "name": "General Medicine",
+        "doctors": [
+          {
+            "doctor_id": "DR01",
+            "name": "Dr. Samira Haddad",
+            "slots_per_day": 20
+          },
+          {
+            "doctor_id": "DR02",
+            "name": "Dr. Omar Barakat",
+            "slots_per_day": 18
+          }
+        ]
+      },
+      {
+        "dept_id": "D02",
+        "name": "Dentistry",
+        "doctors": [
+          {
+            "doctor_id": "DR03",
+            "name": "Dr. Lina Nassar",
+            "slots_per_day": 12
+          }
+        ]
+      },
+      {
+        "dept_id": "D03",
+        "name": "Ophthalmology",
+        "doctors": [
+          {
+            "doctor_id": "DR04",
+            "name": "Dr. Faris Qasim",
+            "slots_per_day": 15
+          }
+        ]
+      }
+    ]
+  }
+}
