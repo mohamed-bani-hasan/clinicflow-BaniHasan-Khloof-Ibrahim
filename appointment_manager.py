@@ -97,3 +97,31 @@ class AppointmentManager:
         )
 
         return appointments
+
+    def cancel(self, appointments: list, appt_id: str) -> list:
+
+        found = False
+        updated = []
+
+        for a in appointments:
+
+            if a["appt_id"] == appt_id:
+
+                a["status"] = "Cancelled"
+                found = True
+
+            updated.append(a)
+
+        if not found:
+            raise ValueError("Appointment not found")
+
+        print(f"Appointment cancelled: {appt_id}")
+
+        return updated
+
+    def get_by_doctor(self, appointments: list, doctor_id: str) -> list:
+
+        return [
+            a for a in appointments
+            if a["doctor_id"] == doctor_id
+        ]
